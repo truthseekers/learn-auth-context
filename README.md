@@ -4,6 +4,8 @@
 
 ## [Heal our planet AND progress society at the same time?](https://truthseekers.io/support-nuclear/)
 
+## [Support our channel, planet AND the future: ](https://truthseekers.io/support-nuclear/)
+
 ### Develop your skills with our high quality tutorials on:
 
 Linux, Docker & Kubernetes, React.js, GraphQL, SQL, Mongo, Emacs & more. Literally anything tech.
