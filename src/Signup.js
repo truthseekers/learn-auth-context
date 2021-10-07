@@ -1,8 +1,10 @@
 import React from "react";
+import { useAuth } from "./AuthContext";
 
 function Signup() {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
+  const { signup } = useAuth();
 
   return (
     <div>
@@ -31,7 +33,7 @@ function Signup() {
           onChange={(e) => setPassword(e.target.value)}
         />
         <br />
-        <button onClick={() => Signup({ email: email, password: password })}>
+        <button onClick={() => signup({ email: email, password: password })}>
           Signup!
         </button>
       </div>

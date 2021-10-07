@@ -1,8 +1,10 @@
 import React from "react";
+import { useAuth } from "./AuthContext";
 
 function Login() {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
+  const { login, error } = useAuth();
 
   return (
     <div>
@@ -31,9 +33,9 @@ function Login() {
           onChange={(e) => setPassword(e.target.value)}
         />
         <br />
-        <button>Log in!</button>
+        <button onClick={() => login(email, password)}>Log in!</button>
       </div>
-      {/* Error msg here */}
+      {error && <h2 style={{ color: "red" }}>Error: {error} </h2>}
     </div>
   );
 }
